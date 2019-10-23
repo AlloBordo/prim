@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="someTag"> При нажатии на кнопку текст в абзац станет h3, но текст останется.</div>
+<p>Hello world</p>
+<input type="button" value="Нажми на меня!" onclick="changeTag();">
+
+<script>
+
+function changeTag() {
+var someTag = document.getElementById('someTag');
+someTag.outerHTML = '<h3>' + someTag.innerHTML + '</h3>';
+}
+</script>
+
+</body>
+</html>
